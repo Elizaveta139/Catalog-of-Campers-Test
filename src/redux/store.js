@@ -1,7 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { persistStore, FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER } from 'redux-persist';
 
-import { catalogReducer } from './slice';
+import { catalogReducer } from './catalogsSlice.js';
+// import { favoriteReducer } from './favorite/favoriteSlice';
 
 export const store = configureStore({
   reducer: {

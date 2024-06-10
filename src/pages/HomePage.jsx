@@ -5,7 +5,7 @@ export default function HomePage() {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Catalog of campers</title>
+        <title>Campers</title>
       </Helmet>
       <Home />
     </HelmetProvider>

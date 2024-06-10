@@ -6,7 +6,7 @@ import CatalogList from '../components/CatalogList/CatalogList';
 import Loader from '../components/Loader/Loader';
 import ErrorMessage from '../components/ErrorMessage/ErrorMessage';
 
-import { fetchCampers } from '../redux/operations';
+import { fetchCampersPage } from '../redux/operations';
 import { selectIsLoading } from '../redux/selectors';
 import { selectError } from '../redux/selectors';
 
@@ -16,7 +16,7 @@ export default function CatalogPage() {
   const error = useSelector(selectError);
 
   useEffect(() => {
-    dispatch(fetchCampers());
+    dispatch(fetchCampersPage());
   }, [dispatch]);
 
   return (

@@ -1,12 +1,13 @@
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 // import toast from 'react-hot-toast';
-import { favoriteCamper } from '../../redux/operations';
-import css from './CatalogItem.module.css';
+// import { favoritesCamper } from '../../redux/operations';
+import css from './CatalogCard.module.css';
 import sprite from '../../assets/sprite.svg';
 
 export default function CatalogItem({ data }) {
   const dispatch = useDispatch();
+
   // const [selectedCamperId, setSelectedCamperId] = useState(null);
   //   const [selectedCamper, setSelectedCamper] = useState(null);
   //   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -24,11 +25,22 @@ export default function CatalogItem({ data }) {
     details,
   } = data;
 
+  // const isFavorite = product => {
+  //   return favorites.some(fav => fav.id === product.id);
+  // };
+
+  // const handleFavoriteClick = (advert) => {
+  //   if (advert.isFavorite) {
+  //     dispatch(removeFavorite(advert));
+  //   } else {
+  //     dispatch(addFavorite(advert));
+  //   }
+  // };
+
   return (
     <div className={css.wrap}>
-      {/* <div className={css.img}> */}
       <img src={gallery[0]} alt={name} className={css.img} />
-      {/* </div> */}
+
       <div>
         <div className={css.wrapTitle}>
           <h3 className={css.title}>{name}</h3>
@@ -61,12 +73,48 @@ export default function CatalogItem({ data }) {
         <p className={css.description}>{description}</p>
 
         <ul className={css.divInfo}>
-          <li className={`${css.text} ${css.textTransform}`}>{adults} adults</li>
-          <li className={css.text}>{transmission}</li>
-          <li className={css.text}>{engine}</li>
-          {details.kitchen !== 0 && <li className={css.text}>Kitchen</li>}
-          <li className={`${css.text} ${css.textTransform}`}>{details.beds} beds</li>
-          {details.airConditioner !== 0 && <li className={css.text}>AC</li>}
+          <li className={`${css.text} ${css.textTransform}`}>
+            <svg width="20" height="20" className={css.svgInfo}>
+              <use xlinkHref={sprite + '#icon-users'}></use>
+            </svg>
+            {adults} adults
+          </li>
+          <li className={css.text}>
+            <svg width="20" height="20" className={css.svgInfo}>
+              <use xlinkHref={sprite + '#icon-wires'} className={css.svg}></use>
+            </svg>
+            {transmission}
+          </li>
+          <li className={css.text}>
+            <svg width="20" height="20" className={css.svgInfo}>
+              <use xlinkHref={sprite + '#icon-container'}></use>
+            </svg>
+            {engine}
+          </li>
+          {details.kitchen !== 0 && (
+            <li className={css.text}>
+              <svg width="20" height="20" className={css.svgInfo}>
+                <use xlinkHref={sprite + '#icon-fork'} className={css.svg}></use>
+              </svg>
+              Kitchen
+            </li>
+          )}
+          <li className={`${css.text} ${css.textTransform}`}>
+            {' '}
+            <svg width="20" height="20" className={css.svgInfo}>
+              <use xlinkHref={sprite + '#icon-bed'} className={css.svg}></use>
+            </svg>
+            {details.beds} beds
+          </li>
+          {details.airConditioner !== 0 && (
+            <li className={css.text}>
+              {' '}
+              <svg width="20" height="20" className={css.svgInfo}>
+                <use xlinkHref={sprite + '#AC'}></use>
+              </svg>
+              AC
+            </li>
+          )}
         </ul>
         <div className={css.btnWrap}>
           <button
