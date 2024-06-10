@@ -18,7 +18,6 @@ const catalogSlice = createSlice({
     itemsAll: [],
     isLoading: false,
     error: null,
-    page: 1,
   },
   extraReducers: builder => {
     builder
@@ -36,6 +35,7 @@ const catalogSlice = createSlice({
         state.error = null;
         // state.page = action.payload.page;
         state.items = action.payload;
+        console.log('action', state.items);
       })
       .addCase(fetchCampersPage.rejected, handleRejected);
   },

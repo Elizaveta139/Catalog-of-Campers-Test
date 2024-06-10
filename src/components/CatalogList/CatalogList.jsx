@@ -28,7 +28,7 @@ export default function CatalogList() {
 
   useEffect(() => {
     if (adverts.length === 0) {
-      dispatch(fetchCampersAll());
+      dispatch(fetchCampersAll(adverts));
       dispatch(fetchCampersPage({ page }));
     }
   }, [adverts, dispatch, page]);
@@ -58,7 +58,7 @@ export default function CatalogList() {
         })}
       </ul>
 
-      {advertsAll.length > 0 && !loading && isLoadMore && <LoadMoreBtn onClick={handleLoadMore} />}
+      {adverts.length > 0 && !loading && isLoadMore && <LoadMoreBtn onClick={handleLoadMore} />}
     </div>
   );
 }

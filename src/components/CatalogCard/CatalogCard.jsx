@@ -4,13 +4,15 @@ import { useState } from 'react';
 // import { favoritesCamper } from '../../redux/operations';
 import css from './CatalogCard.module.css';
 import sprite from '../../assets/sprite.svg';
+import ModalShowMore from '../ModalShowMore/ModalShowMore';
 
 export default function CatalogItem({ data }) {
   const dispatch = useDispatch();
 
   // const [selectedCamperId, setSelectedCamperId] = useState(null);
-  //   const [selectedCamper, setSelectedCamper] = useState(null);
-  //   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedCamper, setSelectedCamper] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const {
     name,
     price,
@@ -36,6 +38,16 @@ export default function CatalogItem({ data }) {
   //     dispatch(addFavorite(advert));
   //   }
   // };
+
+  const handleOpenModal = data => {
+    setSelectedCamper(data);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedCamper(null);
+  };
 
   return (
     <div className={css.wrap}>
@@ -117,15 +129,13 @@ export default function CatalogItem({ data }) {
           )}
         </ul>
         <div className={css.btnWrap}>
-          <button
-            type="button"
-            className={css.btn}
-            //   onClick={() => handleEdit({ id, name, number })}
-          >
+          <button type="button" className={css.btn} onClick={() => handleOpenModal(data)}>
             Show more
           </button>
         </div>
       </div>
+
+      <ModalShowMore isOpen={isModalOpen} onClose={handleCloseModal} camperDetails={data} />
     </div>
   );
 }

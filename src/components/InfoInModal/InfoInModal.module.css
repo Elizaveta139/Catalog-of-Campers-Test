@@ -1,0 +1,67 @@
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+
+.wrapLocationRev {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.textLocation {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.reviewsText {
+  text-decoration: underline;
+}
+
+.svgMap {
+  stroke: var(--main);
+}
+
+.price {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.25;
+  margin-bottom: 24px;
+}
+
+.imgList {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.imgBlock {
+  display: flex;
+  width: 290px;
+  height: 310px;
+}
+
+.img {
+  border-radius: 10px;
+  width: 290px;
+  height: 310px;
+  object-fit: cover;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+.wrapInfo {
+  margin-bottom: 44px;
+}
