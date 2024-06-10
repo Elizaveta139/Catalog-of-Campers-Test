@@ -5,12 +5,12 @@ import { Provider } from 'react-redux';
 import 'modern-normalize';
 import App from '../components/App/App.jsx';
 import { store } from '../redux/store.js';
-import './index.module.css';
+import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Provider store={store}>
-      <BrowserRouter basename="/Catalog-of-Campers-Test/">
+      <BrowserRouter basename="/Catalog-of-Campers-Test">
         <App />
       </BrowserRouter>
     </Provider>

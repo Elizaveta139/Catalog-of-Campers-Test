@@ -7,7 +7,7 @@ export default function FavoritesPage() {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>FavoritesPage</title>
+          <title>Favorites</title>
         </Helmet>
 
         {/* <div className={css.wrapContacts}>

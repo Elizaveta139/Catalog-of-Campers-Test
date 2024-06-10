@@ -7,6 +7,28 @@
   --rating: #ffc531;
   --text: #475467;
   --white: #fff;
+  --animation: 150ms ease-in;
+}
+
+@font-face {
+  font-family: 'Inter', sans-serif;
+  src: url('/public//Inter-400.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter', sans-serif;
+  src: url('/public//Inter-500.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter', sans-serif;
+  src: url('/public//Inter-600.ttf');
+  font-weight: 600;
+  font-style: normal;
 }
 
 body {

@@ -4,7 +4,9 @@ import Home from '../components/Home/Home';
 export default function HomePage() {
   return (
     <HelmetProvider>
-      <Helmet>{/* <title>PhoneBook</title> */}</Helmet>
+      <Helmet>
+        <title>Catalog of campers</title>
+      </Helmet>
       <Home />
     </HelmetProvider>
   );

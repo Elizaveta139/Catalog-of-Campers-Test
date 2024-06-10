@@ -23,7 +23,7 @@ export default function CatalogPage() {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>CatalogPage</title>
+          <title>Catalog</title>
         </Helmet>
 
         <div>
