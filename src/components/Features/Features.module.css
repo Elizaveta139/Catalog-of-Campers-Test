@@ -1,0 +1,44 @@
+.divInfo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 44px;
+}
+
+.text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: capitalize;
+  border-radius: 100px;
+  padding: 12px 18px;
+  height: 44px;
+  background: var(--block-features);
+  display: flex;
+  gap: 8px;
+}
+
+.textTransform {
+  text-transform: none;
+}
+
+.svg {
+  width: 20px;
+  height: 20px;
+  stroke: var(--main);
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.spanFeatures {
+  border-bottom: 1px solid rgba(16, 24, 40, 0.2);
+  margin-bottom: 24px;
+}

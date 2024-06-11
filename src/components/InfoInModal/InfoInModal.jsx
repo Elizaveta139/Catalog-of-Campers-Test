@@ -8,12 +8,9 @@ export default function InfoInModal({ camperDetails }) {
     rating,
     location,
     description,
-    adults,
-    transmission,
-    engine,
+
     reviews,
     gallery,
-    details,
   } = camperDetails;
   return (
     <div className={css.wrapInfo}>
@@ -40,7 +37,7 @@ export default function InfoInModal({ camperDetails }) {
       <ul className={css.imgList}>
         {gallery.map(img => {
           return (
-            <li key={img._id} className={css.imgBlock}>
+            <li key={img} className={css.imgBlock}>
               <img src={img} alt={name} className={css.img} />
             </li>
           );
