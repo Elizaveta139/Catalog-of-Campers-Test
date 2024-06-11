@@ -1,0 +1,62 @@
+.reviewsSection {
+  width: 430px;
+}
+
+.avatarWrap {
+  border-radius: 60px;
+  width: 60px;
+  height: 60px;
+  background: var(--block-features);
+  position: relative;
+}
+
+.avatar {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.25;
+  color: var(--button);
+  position: absolute;
+  top: 15px;
+  left: 21px;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33333;
+  margin-bottom: 4px;
+}
+
+.reviewsList {
+}
+
+.reviewBlock:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.star {
+  margin-right: 4px;
+  fill: var(--block-features);
+}
+
+.reviewStar {
+  fill: var(--rating);
+}
+
+.starUse {
+  min-width: 16px;
+  min-height: 16px;
+}
+
+.nameSection {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.comment {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text);
+}

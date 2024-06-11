@@ -8,6 +8,7 @@ import InfoInModal from '../InfoInModal/InfoInModal';
 import Features from '../Features/Features';
 import Reviews from '../Reviews/Reviews';
 import sprite from '../../assets/sprite.svg';
+import BookingForm from '../BookingForm/BookingForm';
 
 Modal.setAppElement('#root');
 
@@ -62,7 +63,11 @@ export default function ModalShowMore({ isOpen, onClose, camperDetails }) {
             </a>
           </div>
           <div className={css.spanFeatures}></div>
-          {renderComponent()}
+
+          <div className={css.sectionDetalies}>
+            {renderComponent()}
+            <BookingForm />
+          </div>
         </div>
       </Modal>
     </>

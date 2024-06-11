@@ -1,3 +1,7 @@
+.features {
+  width: 430px;
+}
+
 .divInfo {
   display: flex;
   flex-wrap: wrap;
@@ -41,4 +45,28 @@
 .spanFeatures {
   border-bottom: 1px solid rgba(16, 24, 40, 0.2);
   margin-bottom: 24px;
+}
+
+.table {
+  /* width: 100%; */
+  /* border-collapse: collapse; */
+  font-size: 18px;
+  text-align: left;
+  display: block;
+}
+
+.tableText {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.33333;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tableText:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.textForm {
+  text-transform: capitalize;
 }
