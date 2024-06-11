@@ -11,7 +11,7 @@
 .img {
   border-radius: 10px;
   width: 290px;
-  height: 310px;
+  /* min-height: 310px; */
   object-fit: cover;
 }
 

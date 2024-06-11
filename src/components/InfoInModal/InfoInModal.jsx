@@ -37,7 +37,7 @@ export default function InfoInModal({ camperDetails }) {
       <ul className={css.imgList}>
         {gallery.map(img => {
           return (
-            <li key={img} className={css.imgBlock}>
+            <li key={Math.random()} className={css.imgBlock}>
               <img src={img} alt={name} className={css.img} />
             </li>
           );

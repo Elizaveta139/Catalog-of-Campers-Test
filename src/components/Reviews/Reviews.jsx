@@ -4,10 +4,6 @@ import sprite from '../../assets/sprite.svg';
 export default function Reviews({ camperDetails }) {
   const { reviews } = camperDetails;
 
-  const getStarClass = () => {
-    return reviews.reviewer_rating ? css.reviewStar : css.reviewStar2;
-  };
-
   return (
     <div className={css.reviewsSection}>
       {reviews.length !== 0 ? (
