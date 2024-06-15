@@ -5,13 +5,11 @@
   border-radius: 20px;
   padding: 24px;
   width: 888px;
-  /* height: 358px; */
 }
 
 .img {
   border-radius: 10px;
   width: 290px;
-  /* min-height: 310px; */
   object-fit: cover;
 }
 
