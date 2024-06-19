@@ -11,6 +11,7 @@
   border-radius: 10px;
   width: 290px;
   object-fit: cover;
+  /* width: 290px; */
 }
 
 .wrapTitle {
