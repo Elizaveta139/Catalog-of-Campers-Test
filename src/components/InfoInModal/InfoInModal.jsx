@@ -24,6 +24,12 @@ export default function InfoInModal({ camperDetails }) {
             {rating}({reviews.length} Reviews)
           </p>
         </div>
+        <div className={css.location}>
+          <svg width="16" height="16">
+            <use xlinkHref={sprite + '#icon-map'} className={css.svgMap}></use>
+          </svg>
+          <p className={css.textLocation}>{location}</p>
+        </div>
       </div>
 
       <h3 className={css.price}>€{price},00</h3>
