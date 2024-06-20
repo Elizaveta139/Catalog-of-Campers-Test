@@ -7,8 +7,6 @@ export default function BookingForm() {
       <p className={css.subTitle}>Stay connected! We are always ready to help you.</p>
       <form action="">
         <input type="text" />
-        <input type="text" />
-        <input type="text" />
       </form>
     </div>
   );
