@@ -93,6 +93,35 @@ export default function Features({ camperDetails }) {
 
       <h3 className={css.subtitle}>Vehicle details</h3>
       <div className={css.spanFeatures}></div>
+
+      <table className={css.table}>
+        <tbody>
+          <tr className={`${css.tableText} ${css.textForm}`}>
+            <td>Form</td>
+            <td>{form}</td>
+          </tr>
+          <tr className={css.tableText}>
+            <td>Length</td>
+            <td>{length}</td>
+          </tr>
+          <tr className={css.tableText}>
+            <td>Width</td>
+            <td>{width}</td>
+          </tr>
+          <tr className={css.tableText}>
+            <td>Height</td>
+            <td>{height}</td>
+          </tr>
+          <tr className={css.tableText}>
+            <td>Tank</td>
+            <td>{tank}</td>
+          </tr>
+          <tr className={css.tableText}>
+            <td>Consumption</td>
+            <td>{consumption}</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 }
