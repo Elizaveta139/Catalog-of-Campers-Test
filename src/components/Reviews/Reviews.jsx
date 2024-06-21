@@ -19,9 +19,9 @@ export default function Reviews({ camperDetails }) {
                     </div>
                     <div>
                       <p className={css.name}>{review.reviewer_name}</p>
-                      <svg width="16" height="16" className={css.svgInfo}>
+                      {/* <svg width="16" height="16" className={css.svgInfo}>
                         <use xlinkHref={sprite + '#icon-star'} className={css.svg}></use>
-                      </svg>
+                      </svg> */}
 
                       {[...Array(5)].map((_, index) => {
                         console.log('review', review);
