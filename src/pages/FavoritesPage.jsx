@@ -10,12 +10,12 @@ export default function FavoritesPage() {
           <title>Favorites</title>
         </Helmet>
 
-        <div className={css.wrapContacts}>
+        {/* <div className={css.wrapContacts}>
           <SearchBox />
           <ContactList />
           {isLoading && <Loader />}
           {error && <ErrorMessage />}
-        </div>
+        </div> */}
       </HelmetProvider>
     </>
   );
