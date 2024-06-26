@@ -29,8 +29,8 @@ export default function CatalogPage() {
         <div>
           {/* <SearchBox /> */}
           <CatalogList />
-          {/* {isLoading && <Loader />}
-          {error && <ErrorMessage />} */}
+          {isLoading && <Loader />}
+          {error && <ErrorMessage />}
         </div>
       </HelmetProvider>
     </>
