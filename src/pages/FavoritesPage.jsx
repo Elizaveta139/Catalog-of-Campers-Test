@@ -16,10 +16,6 @@ export default function FavoritesPage() {
           {isLoading && <Loader />}
           {error && <ErrorMessage />}
         </div> */}
-
-        <div>
-          <Loader />
-        </div>
       </HelmetProvider>
     </>
   );

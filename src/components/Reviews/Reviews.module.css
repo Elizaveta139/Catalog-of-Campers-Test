@@ -28,9 +28,6 @@
 }
 
 .reviewsList {
-  margin-bottom: 30px;
-  display: flex;
-  justify-content: space-between;
 }
 
 .reviewBlock:not(:last-child) {
