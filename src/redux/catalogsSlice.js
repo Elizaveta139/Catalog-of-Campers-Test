@@ -35,7 +35,7 @@ const catalogSlice = createSlice({
         state.error = null;
         // state.page = action.payload.page;
         state.items = action.payload;
-        // console.log('action', state.items);
+        console.log('action', state.items);
       })
       .addCase(fetchCampersPage.rejected, handleRejected);
   },
