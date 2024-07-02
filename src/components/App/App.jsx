@@ -8,7 +8,7 @@ import { Routes, Route } from 'react-router-dom';
 import css from './App.module.css';
 
 // import Layout from '../Layout/Layout';
-// import NotFound from '../../pages/NotFound';
+import NotFound from '../../pages/NotFound/NotFound';
 import Loader from '../Loader/Loader';
 import AppBar from '../AppBar/AppBar';
 
@@ -35,7 +35,7 @@ export default function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/catalog" element={<CatalogPage />} />
             <Route path="/favorites" element={<FavoritesPage />} />
-            <Route path="*" element={<HomePage />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
       </div>
